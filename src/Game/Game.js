@@ -3,6 +3,8 @@ import { createCamera } from "./core/camera";
 import { createRenderer } from "./core/renderer";
 import { World } from "./world/World";
 import { Map } from "./map/Map";
+import { Lights } from "./lights/Lights";
+import { Models } from "./models/Models";
 import { Player } from "./player/Player";
 
 export class Game {
@@ -17,6 +19,8 @@ export class Game {
 
         this.World = new World(this);
         this.Map = new Map(this);
+        this.Lights = new Lights(this);
+        this.Models = new Models(this);
         this.Player = new Player(this);
 
         // autoResize
@@ -38,7 +42,7 @@ export class Game {
 
         // Le joueur
         this.Player.update();
-        
+
         this.renderer.render(this.scene, this.camera);
     }
 }

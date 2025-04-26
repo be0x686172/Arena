@@ -18,7 +18,7 @@ export class Player {
         this.rightMove = false;
         this.leftMove = false;
         this.moveSpeed = 10;
-        
+        this.delta = new game.THREE.Clock().getDelta();
 
         // Bloquer le pointeur pour contrôler la caméra
         document.addEventListener('click', () => {

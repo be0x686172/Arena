@@ -1,7 +1,7 @@
 export function createFloor(map)
 {
     // THREE
-    const geometry = new map.game.THREE.PlaneGeometry(15, 15);
+    const geometry = new map.game.THREE.PlaneGeometry(35, 35);
     const material = new map.game.THREE.MeshBasicMaterial({ color: 0xebebeb });
     const floor = new map.game.THREE.Mesh(geometry, material);
 

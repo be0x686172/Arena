@@ -10,7 +10,8 @@ export class Glock {
     {
         this.models.loader.load('../../../public/models/glock.glb', (gltf) => {
             this.glock = gltf.scene;
-            
+            this.glockAnimations = gltf.animations;
+
             // On attache le glock à la caméra
             this.models.game.camera.add(this.glock);
             

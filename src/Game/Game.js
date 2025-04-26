@@ -42,7 +42,7 @@ export class Game {
 
         // Le joueur
         this.Player.update();
-
+       
         this.renderer.render(this.scene, this.camera);
     }
 }
